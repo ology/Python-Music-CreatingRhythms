@@ -110,13 +110,13 @@ class TestMusicCreatingRhythms(unittest.TestCase):
         self.assertEqual(self.mcr.count_ones('010'), 1)
         self.assertEqual(self.mcr.count_ones([0,1,0]), 1)
 
-    # def test_count_zeros(self):
-    #     self.assertEqual(self.mcr.count_zeros(0), 1)
-    #     self.assertEqual(self.mcr.count_zeros([0]), 1)
-    #     self.assertEqual(self.mcr.count_zeros(1), 0)
-    #     self.assertEqual(self.mcr.count_zeros([1]), 0)
-    #     self.assertEqual(self.mcr.count_zeros('010'), 2)
-    #     self.assertEqual(self.mcr.count_zeros([0,1,0]), 2)
+    def test_count_zeros(self):
+        self.assertEqual(self.mcr.count_zeros(0), 1)
+        self.assertEqual(self.mcr.count_zeros([0]), 1)
+        self.assertEqual(self.mcr.count_zeros(1), 0)
+        self.assertEqual(self.mcr.count_zeros([1]), 0)
+        self.assertEqual(self.mcr.count_zeros('010'), 2)
+        self.assertEqual(self.mcr.count_zeros([0,1,0]), 2)
 
     # def test_de_bruijn(self):
     #     self.assertEqual(self.mcr.de_bruijn(0), [0])
