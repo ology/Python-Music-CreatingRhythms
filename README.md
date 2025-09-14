@@ -3,7 +3,7 @@ Combinatorial algorithms to generate rhythms
 
 ## DESCRIPTION
 
-This package provides most of the the combinatorial algorithms described in the book, "Creating Rhythms", by Hollos. Many of these algorithms are ported directly from the C, and are pretty fast. Please see the links below for more information.
+This package provides most of the the combinatorial algorithms described in the book, "Creating Rhythms", by Hollos.
 
 NB: Arguments are sometimes switched between book and software.
 
