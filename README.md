@@ -130,3 +130,5 @@ Rotate a necklace of the given `parts`, `n` times.
 
 ## SEE ALSO
 https://abrazol.com/books/rhythm1/ - "Creating Rhythms", the book.
+
+Please see the tests.py program in this distribution for method usage.
