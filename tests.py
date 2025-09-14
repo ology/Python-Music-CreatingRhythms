@@ -41,8 +41,8 @@ class TestMusicCreatingRhythms(unittest.TestCase):
         self.assertEqual(self.mcr.cfsqrt(9), [3])
         self.assertEqual(self.mcr.cfsqrt(42), [6, 2, 12])
 
-    # def test_chsequl(self):
-    #     self.assertEqual(self.mcr.chsequl('l',1,0), [0])
+    def test_chsequl(self):
+        self.assertEqual(self.mcr.chsequl('l',1,0), [0])
     #     self.assertEqual(self.mcr.chsequl('u',1,0), [1])
     #     self.assertEqual(self.mcr.chsequl('l',1,1), [0,1])
     #     self.assertEqual(self.mcr.chsequl('u',1,1), [1,0])
