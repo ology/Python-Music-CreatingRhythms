@@ -15,6 +15,13 @@ The `part*` methods are used to generate all possible partitions of an integer i
 
 NB: Arguments are sometimes switched between book and software.
 
+## EXAMPLE
+```python
+from music_creatingrhythms import Rhythms
+r = Rhythms()
+e = r.euclid(6,16) # => [1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0]
+```
+
 ## METHODS
 
 ### b2int

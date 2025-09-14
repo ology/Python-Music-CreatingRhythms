@@ -2,7 +2,6 @@ import sys
 sys.path.append('./src')
 import unittest
 from music_creatingrhythms.music_creatingrhythms import Rhythms
-from math import isclose
 
 class TestMusicCreatingRhythms(unittest.TestCase):
     def setUp(self):
@@ -129,6 +128,7 @@ class TestMusicCreatingRhythms(unittest.TestCase):
         self.assertEqual(self.mcr.euclid(2,4), [1,0,1,0])
         self.assertEqual(self.mcr.euclid(3,4), [1,1,0,1])
         self.assertEqual(self.mcr.euclid(4,4), [1,1,1,1])
+        self.assertEqual(self.mcr.euclid(6,16), [1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0])
 
     def test_int2b(self):
         self.assertEqual(self.mcr.int2b([[1,2,3]]), [[1,1,0,1,0,0]])
