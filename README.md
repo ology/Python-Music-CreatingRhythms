@@ -9,3 +9,11 @@ NB: Arguments are sometimes switched between book and software.
 
 Additionally, this module provides utilities that are not part of the book but are handy nonetheless.
 
+## METHODS
+
+### b2int
+This method takes a set of binary sequences and converts them into intervals.
+
+That is, it converts binary sequences of the form [[1],[1,0],[1,0,0]] into a set of intervals of the form [[1],[2],[3]].
+
+This basically is the number of zeros following a one.
