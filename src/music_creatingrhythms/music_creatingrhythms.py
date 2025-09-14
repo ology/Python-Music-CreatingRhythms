@@ -354,3 +354,7 @@ class Rhythms:
     def parta(self, n, *parts):
         allowed = set(parts)
         return [p for p in self.part(n) if all(x in allowed for x in p)]
+
+    def partam(self, n, m, *parts):
+        allowed = set(parts)
+        return [p for p in self.part(n) if len(p) == m and all(x in allowed for x in p)]

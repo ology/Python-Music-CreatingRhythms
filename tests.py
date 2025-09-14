@@ -195,14 +195,14 @@ class TestMusicCreatingRhythms(unittest.TestCase):
         self.assertEqual(self.mcr.parta(4,1,2), [[1,1,1,1],[1,1,2],[2,2]])
         self.assertEqual(self.mcr.parta(4,1,2,3), [[1,1,1,1],[1,1,2],[1,3],[2,2]])
 
-    # def test_partam(self):
-    #     self.assertEqual(self.mcr.partam(1,1,1), [[1]])
-    #     self.assertEqual(self.mcr.partam(1,2,1), [])
-    #     self.assertEqual(self.mcr.partam(2,2,1), [[1,1]])
-    #     self.assertEqual(self.mcr.partam(3,3,1), [[1,1,1]])
-    #     self.assertEqual(self.mcr.partam(4,4,1), [[1,1,1,1]])
-    #     self.assertEqual(self.mcr.partam(4,3,1,2), [[1,1,2]])
-    #     self.assertEqual(self.mcr.partam(4,2,1,2,3), [[1,3],[2,2]])
+    def test_partam(self):
+        self.assertEqual(self.mcr.partam(1,1,1), [[1]])
+        self.assertEqual(self.mcr.partam(1,2,1), [])
+        self.assertEqual(self.mcr.partam(2,2,1), [[1,1]])
+        self.assertEqual(self.mcr.partam(3,3,1), [[1,1,1]])
+        self.assertEqual(self.mcr.partam(4,4,1), [[1,1,1,1]])
+        self.assertEqual(self.mcr.partam(4,3,1,2), [[1,1,2]])
+        self.assertEqual(self.mcr.partam(4,2,1,2,3), [[1,3],[2,2]])
 
     # def test_partm(self):
     #     self.assertEqual(self.mcr.partm(1,1), [[1]])
