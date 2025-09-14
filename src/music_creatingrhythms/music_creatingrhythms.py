@@ -389,3 +389,8 @@ class Rhythms:
         head = parts[:n]
         tail = list(reversed(parts[n:]))
         return head + tail
+
+    def rotate_n(self, n, parts):
+        n = n % len(parts)
+        return parts[n:] + parts[:n]
+  

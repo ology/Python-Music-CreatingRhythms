@@ -234,14 +234,14 @@ class TestMusicCreatingRhythms(unittest.TestCase):
         self.assertEqual(self.mcr.reverse_at(3, parts), [1,0,1,0,0])
         self.assertEqual(self.mcr.reverse_at(4, parts), [1,0,1,0,0])
 
-    # def test_rotate_n(self):
-    #     parts = [1,0,1,0,0]
-    #     self.assertEqual(self.mcr.rotate_n(0, parts), [1,0,1,0,0])
-    #     self.assertEqual(self.mcr.rotate_n(1, parts), [0,1,0,1,0])
-    #     self.assertEqual(self.mcr.rotate_n(2, parts), [0,0,1,0,1])
-    #     self.assertEqual(self.mcr.rotate_n(3, parts), [1,0,0,1,0])
-    #     self.assertEqual(self.mcr.rotate_n(4, parts), [0,1,0,0,1])
-    #     self.assertEqual(self.mcr.rotate_n(5, parts), [1,0,1,0,0])
+    def test_rotate_n(self):
+        parts = [1,0,1,0,0]
+        self.assertEqual(self.mcr.rotate_n(0, parts), [1,0,1,0,0])
+        self.assertEqual(self.mcr.rotate_n(1, parts), [0,1,0,0,1])
+        self.assertEqual(self.mcr.rotate_n(2, parts), [1,0,0,1,0])
+        self.assertEqual(self.mcr.rotate_n(3, parts), [0,0,1,0,1])
+        self.assertEqual(self.mcr.rotate_n(4, parts), [0,1,0,1,0])
+        self.assertEqual(self.mcr.rotate_n(5, parts), [1,0,1,0,0])
 
 if __name__ == '__main__':
     unittest.main()
