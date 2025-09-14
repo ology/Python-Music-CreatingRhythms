@@ -59,11 +59,11 @@ class TestMusicCreatingRhythms(unittest.TestCase):
         self.assertEqual(self.mcr.chsequl('l',11,5,4), [0,1,1,0])
         self.assertEqual(self.mcr.chsequl('u',11,5,4), [1,1,1,0])
 
-    # def test_comp(self):
-    #     self.assertEqual(self.mcr.comp(1), [[1]])
-    #     self.assertEqual(self.mcr.comp(2), [[1,1],[2]])
-    #     self.assertEqual(self.mcr.comp(3), [[1,1,1],[1,2],[2,1],[3]])
-    #     self.assertEqual(self.mcr.comp(4), [[1,1,1,1],[1,1,2],[1,2,1],[1,3],[2,1,1],[2,2],[3,1],[4]])
+    def test_comp(self):
+        self.assertEqual(self.mcr.comp(1), [[1]])
+        self.assertEqual(self.mcr.comp(2), [[1,1],[2]])
+        self.assertEqual(self.mcr.comp(3), [[1,1,1],[1,2],[2,1],[3]])
+        self.assertEqual(self.mcr.comp(4), [[1,1,1,1],[1,1,2],[1,2,1],[1,3],[2,1,1],[2,2],[3,1],[4]])
 
     # def test_compa(self):
     #     self.assertEqual(self.mcr.compa(1,1), [[1]])
