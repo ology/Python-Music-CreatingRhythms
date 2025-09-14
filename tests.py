@@ -146,20 +146,20 @@ class TestMusicCreatingRhythms(unittest.TestCase):
         self.assertEqual(self.mcr.invert_at(4, parts), [1,0,1,0,1])
         self.assertEqual(self.mcr.invert_at(5, parts), [1,0,1,0,0])
 
-    # def test_neck(self):
-    #     self.assertEqual(self.mcr.neck(1), [[1],[0]])
-    #     self.assertEqual(self.mcr.neck(2), [[1,1],[1,0],[0,0]])
-    #     self.assertEqual(self.mcr.neck(3), [[1,1,1],[1,1,0],[1,0,0],[0,0,0]])
-    #     self.assertEqual(self.mcr.neck(4), [[1,1,1,1],[1,1,1,0],[1,1,0,0],[1,0,1,0],[1,0,0,0],[0,0,0,0]])
+    def test_neck(self):
+        self.assertEqual(self.mcr.neck(1), [[1],[0]])
+        self.assertEqual(self.mcr.neck(2), [[1,1],[1,0],[0,0]])
+        self.assertEqual(self.mcr.neck(3), [[1,1,1],[1,1,0],[1,0,0],[0,0,0]])
+        self.assertEqual(self.mcr.neck(4), [[1,1,1,1],[1,1,1,0],[1,1,0,0],[1,0,1,0],[1,0,0,0],[0,0,0,0]])
 
-    # def test_necka(self):
-    #     self.assertEqual(self.mcr.necka(1,1), [[1]])
-    #     self.assertEqual(self.mcr.necka(1,2), [])
-    #     self.assertEqual(self.mcr.necka(2,2), [[1,0]])
-    #     self.assertEqual(self.mcr.necka(3,1), [[1,1,1]])
-    #     self.assertEqual(self.mcr.necka(4,1), [[1,1,1,1]])
-    #     self.assertEqual(self.mcr.necka(4,1,2), [[1,1,1,1],[1,1,1,0],[1,0,1,0]])
-    #     self.assertEqual(self.mcr.necka(4,1,2,3), [[1,1,1,1],[1,1,1,0],[1,1,0,0],[1,0,1,0]])
+    def test_necka(self):
+        self.assertEqual(self.mcr.necka(1,1), [[1]])
+        self.assertEqual(self.mcr.necka(1,2), [])
+        self.assertEqual(self.mcr.necka(2,2), [[1,0]])
+        self.assertEqual(self.mcr.necka(3,1), [[1,1,1]])
+        self.assertEqual(self.mcr.necka(4,1), [[1,1,1,1]])
+        self.assertEqual(self.mcr.necka(4,1,2), [[1,1,1,1],[1,1,1,0],[1,0,1,0]])
+        self.assertEqual(self.mcr.necka(4,1,2,3), [[1,1,1,1],[1,1,1,0],[1,1,0,0],[1,0,1,0]])
 
     # def test_neckam(self):
     #     self.assertEqual(self.mcr.neckam(1,1,1), [[1]])
