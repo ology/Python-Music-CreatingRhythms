@@ -21,12 +21,12 @@ class TestMusicCreatingRhythms(unittest.TestCase):
         self.assertEqual(self.mcr.b2int('1111'), '1 1 1 1')
         self.assertEqual(self.mcr.b2int('11111111'), '1 1 1 1 1 1 1 1')
 
-    # def test_cfcv(self):
-    #     self.assertEqual(self.mcr.cfcv(1,2), [3,2])
-    #     self.assertEqual(self.mcr.cfcv(1,2,2), [7,5])
-    #     self.assertEqual(self.mcr.cfcv(1,2,2,2), [17,12])
-    #     self.assertEqual(self.mcr.cfcv(1,1,2), [5,3])
-    #     self.assertEqual(self.mcr.cfcv(1,1,2,1,2), [19,11])
+    def test_continued_fraction_convergent(self):
+        self.assertEqual(self.mcr.cfcv(1,2), [3,2])
+        self.assertEqual(self.mcr.cfcv(1,2,2), [7,5])
+        self.assertEqual(self.mcr.cfcv(1,2,2,2), [17,12])
+        self.assertEqual(self.mcr.cfcv(1,1,2), [5,3])
+        self.assertEqual(self.mcr.cfcv(1,1,2,1,2), [19,11])
 
     # def test_chsequl(self):
     #     self.assertEqual(self.mcr.chsequl('l',1,0), [0])
