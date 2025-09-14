@@ -1,2 +1,2 @@
-# Python-Music-CreatingRhythms
+# Music CreatingRhythms
 Combinatorial algorithms to generate rhythms
