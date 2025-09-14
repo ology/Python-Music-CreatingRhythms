@@ -118,11 +118,11 @@ class TestMusicCreatingRhythms(unittest.TestCase):
         self.assertEqual(self.mcr.count_zeros('010'), 2)
         self.assertEqual(self.mcr.count_zeros([0,1,0]), 2)
 
-    # def test_de_bruijn(self):
-    #     self.assertEqual(self.mcr.de_bruijn(0), [0])
-    #     self.assertEqual(self.mcr.de_bruijn(1), [1,0])
-    #     self.assertEqual(self.mcr.de_bruijn(2), [1,1,0,0])
-    #     self.assertEqual(self.mcr.de_bruijn(3), [1,1,1,0,1,0,0,0])
+    def test_de_bruijn(self):
+        self.assertEqual(self.mcr.de_bruijn(0), [0])
+        self.assertEqual(self.mcr.de_bruijn(1), [1,0])
+        self.assertEqual(self.mcr.de_bruijn(2), [1,1,0,0])
+        self.assertEqual(self.mcr.de_bruijn(3), [1,1,1,0,1,0,0,0])
 
     # def test_euclid(self):
     #     self.assertEqual(self.mcr.euclid(1,1), [1])
