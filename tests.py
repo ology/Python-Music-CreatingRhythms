@@ -133,9 +133,9 @@ class TestMusicCreatingRhythms(unittest.TestCase):
         self.assertEqual(self.mcr.euclid(3,4), [1,1,0,1])
         self.assertEqual(self.mcr.euclid(4,4), [1,1,1,1])
 
-    # def test_int2b(self):
-    #     self.assertEqual(self.mcr.int2b([[1,2,3]]), [[1,1,0,1,0,0]])
-    #     self.assertEqual(self.mcr.int2b([[1],[2],[3]]), [[1],[1,0],[1,0,0]])
+    def test_int2b(self):
+        self.assertEqual(self.mcr.int2b([[1,2,3]]), [[1,1,0,1,0,0]])
+        self.assertEqual(self.mcr.int2b([[1],[2],[3]]), [[1],[1,0],[1,0,0]])
 
     # def test_invert_at(self):
     #     parts = [1,0,1,0,0]
