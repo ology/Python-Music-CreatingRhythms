@@ -92,23 +92,23 @@ class TestMusicCreatingRhythms(unittest.TestCase):
         self.assertEqual(self.mcr.compm(5,2), [[1,4],[2,3],[3,2],[4,1]])
         self.assertEqual(self.mcr.compm(6,2), [[1,5],[2,4],[3,3],[4,2],[5,1]])
 
-    # def test_compmrnd(self):
-    #     self.assertEqual(sum(self.mcr.compmrnd(0,0)), 0)
-    #     self.assertEqual(sum(self.mcr.compmrnd(1,1)), 1)
-    #     self.assertEqual(sum(self.mcr.compmrnd(16,4)), 16)
+    def test_compmrnd(self):
+        self.assertEqual(sum(self.mcr.compmrnd(0,0)), 0)
+        self.assertEqual(sum(self.mcr.compmrnd(1,1)), 1)
+        self.assertEqual(sum(self.mcr.compmrnd(16,4)), 16)
 
-    # def test_comprnd(self):
-    #     self.assertEqual(sum(self.mcr.comprnd(0)), 0)
-    #     self.assertEqual(sum(self.mcr.comprnd(1)), 1)
-    #     self.assertEqual(sum(self.mcr.comprnd(16)), 16)
+    def test_comprnd(self):
+        self.assertEqual(sum(self.mcr.comprnd(0)), 0)
+        self.assertEqual(sum(self.mcr.comprnd(1)), 1)
+        self.assertEqual(sum(self.mcr.comprnd(16)), 16)
 
-    # def test_count_ones(self):
-    #     self.assertEqual(self.mcr.count_ones(0), 0)
-    #     self.assertEqual(self.mcr.count_ones([0]), 0)
-    #     self.assertEqual(self.mcr.count_ones(1), 1)
-    #     self.assertEqual(self.mcr.count_ones([1]), 1)
-    #     self.assertEqual(self.mcr.count_ones('010'), 1)
-    #     self.assertEqual(self.mcr.count_ones([0,1,0]), 1)
+    def test_count_ones(self):
+        self.assertEqual(self.mcr.count_ones(0), 0)
+        self.assertEqual(self.mcr.count_ones([0]), 0)
+        self.assertEqual(self.mcr.count_ones(1), 1)
+        self.assertEqual(self.mcr.count_ones([1]), 1)
+        self.assertEqual(self.mcr.count_ones('010'), 1)
+        self.assertEqual(self.mcr.count_ones([0,1,0]), 1)
 
     # def test_count_zeros(self):
     #     self.assertEqual(self.mcr.count_zeros(0), 1)
