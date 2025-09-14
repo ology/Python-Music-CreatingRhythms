@@ -311,3 +311,26 @@ class Rhythms:
                 self._neckbinam(n, k + 1, k, q, p + 1, m, i, necklaces, parts, intervals)
             else:
                 self._neckbinam(n, k + 1, l, q, p + 1, m, i, necklaces, parts, intervals)
+
+    def neckm(self, n, m):
+        necklaces = []
+        parts = [1]
+        i = [0]
+        self._neckbinm(n, 1, 1, 0, m, i, necklaces, parts)
+        return necklaces
+
+    def _neckbinm(self, n, k, l, p, m, i, necklaces, parts):
+        if k > n:
+            if (n % l == 0) and (p == m):
+                necklaces.append([parts[j] for j in range(1, n + 1)])
+                i[0] += 1
+        else:
+            if len(parts) <= k:
+                parts.append(0)
+            parts[k] = parts[k - l]
+            if parts[k] == 1:
+                self._neckbinm(n, k + 1, l, p + 1, m, i, necklaces, parts)
+                parts[k] = 0
+                self._neckbinm(n, k + 1, k, p, m, i, necklaces, parts)
+            else:
+                self._neckbinm(n, k + 1, l, p, m, i, necklaces, parts)
