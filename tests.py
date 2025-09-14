@@ -137,14 +137,14 @@ class TestMusicCreatingRhythms(unittest.TestCase):
         self.assertEqual(self.mcr.int2b([[1,2,3]]), [[1,1,0,1,0,0]])
         self.assertEqual(self.mcr.int2b([[1],[2],[3]]), [[1],[1,0],[1,0,0]])
 
-    # def test_invert_at(self):
-    #     parts = [1,0,1,0,0]
-    #     self.assertEqual(self.mcr.invert_at(0, parts), [0,1,0,1,1])
-    #     self.assertEqual(self.mcr.invert_at(1, parts), [1,1,0,1,1])
-    #     self.assertEqual(self.mcr.invert_at(2, parts), [1,0,0,1,1])
-    #     self.assertEqual(self.mcr.invert_at(3, parts), [1,0,1,1,1])
-    #     self.assertEqual(self.mcr.invert_at(4, parts), [1,0,1,0,1])
-    #     self.assertEqual(self.mcr.invert_at(5, parts), [1,0,1,0,0])
+    def test_invert_at(self):
+        parts = [1,0,1,0,0]
+        self.assertEqual(self.mcr.invert_at(0, parts), [0,1,0,1,1])
+        self.assertEqual(self.mcr.invert_at(1, parts), [1,1,0,1,1])
+        self.assertEqual(self.mcr.invert_at(2, parts), [1,0,0,1,1])
+        self.assertEqual(self.mcr.invert_at(3, parts), [1,0,1,1,1])
+        self.assertEqual(self.mcr.invert_at(4, parts), [1,0,1,0,1])
+        self.assertEqual(self.mcr.invert_at(5, parts), [1,0,1,0,0])
 
     # def test_neck(self):
     #     self.assertEqual(self.mcr.neck(1), [[1],[0]])
