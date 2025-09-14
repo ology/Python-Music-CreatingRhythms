@@ -124,14 +124,14 @@ class TestMusicCreatingRhythms(unittest.TestCase):
         self.assertEqual(self.mcr.de_bruijn(2), [1,1,0,0])
         self.assertEqual(self.mcr.de_bruijn(3), [1,1,1,0,1,0,0,0])
 
-    # def test_euclid(self):
-    #     self.assertEqual(self.mcr.euclid(1,1), [1])
-    #     self.assertEqual(self.mcr.euclid(1,2), [1,0])
-    #     self.assertEqual(self.mcr.euclid(1,3), [1,0,0])
-    #     self.assertEqual(self.mcr.euclid(1,4), [1,0,0,0])
-    #     self.assertEqual(self.mcr.euclid(2,4), [1,0,1,0])
-    #     self.assertEqual(self.mcr.euclid(3,4), [1,1,0,1])
-    #     self.assertEqual(self.mcr.euclid(4,4), [1,1,1,1])
+    def test_euclid(self):
+        self.assertEqual(self.mcr.euclid(1,1), [1])
+        self.assertEqual(self.mcr.euclid(1,2), [1,0])
+        self.assertEqual(self.mcr.euclid(1,3), [1,0,0])
+        self.assertEqual(self.mcr.euclid(1,4), [1,0,0,0])
+        self.assertEqual(self.mcr.euclid(2,4), [1,0,1,0])
+        self.assertEqual(self.mcr.euclid(3,4), [1,1,0,1])
+        self.assertEqual(self.mcr.euclid(4,4), [1,1,1,1])
 
     # def test_int2b(self):
     #     self.assertEqual(self.mcr.int2b([[1,2,3]]), [[1,1,0,1,0,0]])
