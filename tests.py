@@ -28,6 +28,14 @@ class TestMusicCreatingRhythms(unittest.TestCase):
         self.assertEqual(self.mcr.cfcv(1,1,2), [5,3])
         self.assertEqual(self.mcr.cfcv(1,1,2,1,2), [19,11])
 
+    def test_continued_fraction_square_root(self):
+        self.assertEqual(self.mcr.cfsqrt(0), [0])
+        self.assertEqual(self.mcr.cfsqrt(1), [1])
+        self.assertEqual(self.mcr.cfsqrt(2), [1, 2])
+        self.assertEqual(self.mcr.cfsqrt(3), [1, 1, 2])
+        self.assertEqual(self.mcr.cfsqrt(4), [2])
+        self.assertEqual(self.mcr.cfsqrt(42), [6, 2, 12])
+
     # def test_chsequl(self):
     #     self.assertEqual(self.mcr.chsequl('l',1,0), [0])
     #     self.assertEqual(self.mcr.chsequl('u',1,0), [1])
