@@ -184,6 +184,7 @@ class TestMusicCreatingRhythms(unittest.TestCase):
         self.assertEqual(self.mcr.part(2), [[1,1],[2]])
         self.assertEqual(self.mcr.part(3), [[1,1,1],[1,2],[3]])
         self.assertEqual(self.mcr.part(4), [[1,1,1,1],[1,1,2],[1,3],[2,2],[4]])
+        self.assertEqual(self.mcr.part(5), [[1,1,1,1,1],[1,1,1,2],[1,1,3],[1,2,2],[1,4],[2,3],[5]])
 
     # def test_parta(self):
     #     self.assertEqual(self.mcr.parta(1,1), [[1]])
