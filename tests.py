@@ -161,14 +161,14 @@ class TestMusicCreatingRhythms(unittest.TestCase):
         self.assertEqual(self.mcr.necka(4,1,2), [[1,1,1,1],[1,1,1,0],[1,0,1,0]])
         self.assertEqual(self.mcr.necka(4,1,2,3), [[1,1,1,1],[1,1,1,0],[1,1,0,0],[1,0,1,0]])
 
-    # def test_neckam(self):
-    #     self.assertEqual(self.mcr.neckam(1,1,1), [[1]])
-    #     self.assertEqual(self.mcr.neckam(1,2,1), [])
-    #     self.assertEqual(self.mcr.neckam(2,2,1), [[1,1]])
-    #     self.assertEqual(self.mcr.neckam(3,3,1), [[1,1,1]])
-    #     self.assertEqual(self.mcr.neckam(4,4,1), [[1,1,1,1]])
-    #     self.assertEqual(self.mcr.neckam(4,3,1,2), [[1,1,1,0]])
-    #     self.assertEqual(self.mcr.neckam(4,2,1,2,3), [[1,1,0,0],[1,0,1,0]])
+    def test_neckam(self):
+        self.assertEqual(self.mcr.neckam(1,1,1), [[1]])
+        self.assertEqual(self.mcr.neckam(1,2,1), [])
+        self.assertEqual(self.mcr.neckam(2,2,1), [[1,1]])
+        self.assertEqual(self.mcr.neckam(3,3,1), [[1,1,1]])
+        self.assertEqual(self.mcr.neckam(4,4,1), [[1,1,1,1]])
+        self.assertEqual(self.mcr.neckam(4,3,1,2), [[1,1,1,0]])
+        self.assertEqual(self.mcr.neckam(4,2,1,2,3), [[1,1,0,0],[1,0,1,0]])
 
     # def test_neckm(self):
     #     self.assertEqual(self.mcr.neckm(1,1), [[1]])
