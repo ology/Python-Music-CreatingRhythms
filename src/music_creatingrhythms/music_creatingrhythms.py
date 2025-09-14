@@ -334,3 +334,19 @@ class Rhythms:
                 self._neckbinm(n, k + 1, k, p, m, i, necklaces, parts)
             else:
                 self._neckbinm(n, k + 1, l, p, m, i, necklaces, parts)
+
+    def partition(self, n, p, m, parts, result):
+        if n == 0:
+            result.append(parts[:m] + [p])
+            return
+        if n < 0:
+            return
+        parts[m] = p
+        self.partition(n - p, p, m + 1, parts, result)
+        self.partition(n - 1, p + 1, m, parts, result)
+
+    def part(self, n):
+        parts = [0] * n
+        result = []
+        self.partition(n - 1, 1, 0, parts, result)
+        return result
