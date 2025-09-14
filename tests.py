@@ -12,14 +12,14 @@ class TestMusicCreatingRhythms(unittest.TestCase):
         self.assertEqual(self.mcr.verbose, 1)
 
     def test_binary_to_intervals(self):
-        self.assertEqual(self.mcr.b2int(''), '')
-        self.assertEqual(self.mcr.b2int('0'), '1')
-        self.assertEqual(self.mcr.b2int('110100'), '1 2 3')
-        self.assertEqual(self.mcr.b2int('101011010'), '2 2 1 2 2')
-        self.assertEqual(self.mcr.b2int('10001000'), '4 4')
-        self.assertEqual(self.mcr.b2int('00000000'), '8')
-        self.assertEqual(self.mcr.b2int('1111'), '1 1 1 1')
-        self.assertEqual(self.mcr.b2int('11111111'), '1 1 1 1 1 1 1 1')
+        self.assertEqual(self.mcr.b2int(''), [])
+        self.assertEqual(self.mcr.b2int('0'), [1])
+        self.assertEqual(self.mcr.b2int('110100'), [1,2,3])
+        self.assertEqual(self.mcr.b2int('101011010'), [2,2,1,2,2])
+        self.assertEqual(self.mcr.b2int('10001000'), [4,4])
+        self.assertEqual(self.mcr.b2int('00000000'), [8])
+        self.assertEqual(self.mcr.b2int('1111'), [1,1,1,1])
+        self.assertEqual(self.mcr.b2int('11111111'), [1,1,1,1,1,1,1,1])
 
     def test_continued_fraction_convergent(self):
         self.assertEqual(self.mcr.cfcv(1,2), [3,2])
