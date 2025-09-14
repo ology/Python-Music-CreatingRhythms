@@ -1,3 +1,4 @@
+from itertools import permutations
 import math
 import random
 import sys
@@ -361,3 +362,6 @@ class Rhythms:
 
     def partm(self, n, m):
         return [p for p in self.part(n) if len(p) == m]
+
+    def permi(self, parts):
+        return [list(p) for p in permutations(parts)]
