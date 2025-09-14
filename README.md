@@ -1,4 +1,4 @@
-# Music CreatingRhythms
+# Music Creating-Rhythms
 Combinatorial algorithms to generate rhythms
 
 ## DESCRIPTION
