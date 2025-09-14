@@ -365,3 +365,22 @@ class Rhythms:
 
     def permi(self, parts):
         return [list(p) for p in permutations(parts)]
+
+    def pfold(self, n, m, f):
+        sequence = []
+        def _oddeven(n):
+            k = 0
+            l = n & -n
+            y = (n // l - 1) // 2
+            while l > 1:
+                l >>= 1
+                k += 1
+            return k, y
+        for i in range(1, n + 1):
+            k, j = _oddeven(i)
+            k = k % m
+            y = 1 if (f & (1 << k)) else 0
+            if ((2 * j + 1) % 4 > 1):
+                y = 1 - y
+            sequence.append(y)
+        return sequence

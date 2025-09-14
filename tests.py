@@ -217,14 +217,14 @@ class TestMusicCreatingRhythms(unittest.TestCase):
         parts = [1,0,1]
         self.assertEqual(self.mcr.permi(parts), [[1,0,1],[1,1,0],[0,1,1],[0,1,1],[1,1,0],[1,0,1]])
 
-    # def test_pfold(self):
-    #     self.assertEqual(self.mcr.pfold(-1,1,1), [])
-    #     self.assertEqual(self.mcr.pfold(1,1,1), [1])
-    #     self.assertEqual(self.mcr.pfold(2,1,1), [1,1])
-    #     self.assertEqual(self.mcr.pfold(3,1,1), [1,1,0])
-    #     self.assertEqual(self.mcr.pfold(4,1,1), [1,1,0,1])
-    #     self.assertEqual(self.mcr.pfold(15,4,0), [0,0,1,0,0,1,1,0,0,0,1,1,0,1,1])
-    #     self.assertEqual(self.mcr.pfold(15,4,1), [1,0,0,0,1,1,0,0,1,0,0,1,1,1,0])
+    def test_pfold(self):
+        self.assertEqual(self.mcr.pfold(-1,1,1), [])
+        self.assertEqual(self.mcr.pfold(1,1,1), [1])
+        self.assertEqual(self.mcr.pfold(2,1,1), [1,1])
+        self.assertEqual(self.mcr.pfold(3,1,1), [1,1,0])
+        self.assertEqual(self.mcr.pfold(4,1,1), [1,1,0,1])
+        self.assertEqual(self.mcr.pfold(15,4,0), [0,0,1,0,0,1,1,0,0,0,1,1,0,1,1])
+        self.assertEqual(self.mcr.pfold(15,4,1), [1,0,0,0,1,1,0,0,1,0,0,1,1,1,0])
 
     # def test_reverse_at(self):
     #     parts = [1,0,1,0,0]
