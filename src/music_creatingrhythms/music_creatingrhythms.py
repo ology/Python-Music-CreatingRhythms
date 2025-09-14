@@ -350,3 +350,7 @@ class Rhythms:
         result = []
         self.partition(n - 1, 1, 0, parts, result)
         return result
+
+    def parta(self, n, *parts):
+        allowed = set(parts)
+        return [p for p in self.part(n) if all(x in allowed for x in p)]
