@@ -25,9 +25,7 @@ e = r.euclid(6,16) # => [1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0]
 ## METHODS
 
 ### b2int
-This method takes a set of binary sequences and converts them into intervals.
-
-That is, it converts binary sequences of the form `110100` into a set of intervals of the form `[1,2,3]`.
+This method takes a binary string sequence like `110100` and converts it into a list of intervals like `[1,2,3]`.
 
 ### cfcv
 This method calculates the continued fraction convergent given a set of terms. It is used to find the best rational approximations to real numbers by using their continued fraction expansions.
