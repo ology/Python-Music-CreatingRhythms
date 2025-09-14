@@ -4,11 +4,8 @@ import random
 import sys
 
 class Rhythms:
-    def __init__(
-        self,
-        verbose=False,
-    ):
-        self.verbose = verbose
+    def __init__(self):
+        pass
 
     def b2int(self, binary_str):
         nbit = len(binary_str)

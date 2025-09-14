@@ -6,10 +6,7 @@ from math import isclose
 
 class TestMusicCreatingRhythms(unittest.TestCase):
     def setUp(self):
-        self.mcr = Rhythms(verbose=1)
-
-    def test_defaults(self):
-        self.assertEqual(self.mcr.verbose, 1)
+        self.mcr = Rhythms()
 
     def test_binary_to_intervals(self):
         self.assertEqual(self.mcr.b2int(''), [])
