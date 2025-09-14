@@ -22,8 +22,6 @@ This method takes a set of binary sequences and converts them into intervals.
 
 That is, it converts binary sequences of the form `110100` into a set of intervals of the form `[1,2,3]`.
 
-This basically is the number of zeros following a one.
-
 ### cfcv
 This method calculates the continued fraction convergent given a set of terms. It is used to find the best rational approximations to real numbers by using their continued fraction expansions.
 
