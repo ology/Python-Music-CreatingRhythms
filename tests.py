@@ -65,14 +65,14 @@ class TestMusicCreatingRhythms(unittest.TestCase):
         self.assertEqual(self.mcr.comp(3), [[1,1,1],[1,2],[2,1],[3]])
         self.assertEqual(self.mcr.comp(4), [[1,1,1,1],[1,1,2],[1,2,1],[1,3],[2,1,1],[2,2],[3,1],[4]])
 
-    # def test_compa(self):
-    #     self.assertEqual(self.mcr.compa(1,1), [[1]])
-    #     self.assertEqual(self.mcr.compa(1,2), [])
-    #     self.assertEqual(self.mcr.compa(2,2), [[2]])
-    #     self.assertEqual(self.mcr.compa(3,1), [[1,1,1]])
-    #     self.assertEqual(self.mcr.compa(4,1), [[1,1,1,1]])
-    #     self.assertEqual(self.mcr.compa(4,1,2), [[1,1,1,1],[1,1,2],[1,2,1],[2,1,1],[2,2]])
-    #     self.assertEqual(self.mcr.compa(4,1,2,3), [[1,1,1,1],[1,1,2],[1,2,1],[1,3],[2,1,1],[2,2],[3,1]])
+    def test_compa(self):
+        self.assertEqual(self.mcr.compa(1,1), [[1]])
+        self.assertEqual(self.mcr.compa(1,2), [])
+        self.assertEqual(self.mcr.compa(2,2), [[2]])
+        self.assertEqual(self.mcr.compa(3,1), [[1,1,1]])
+        self.assertEqual(self.mcr.compa(4,1), [[1,1,1,1]])
+        self.assertEqual(self.mcr.compa(4,1,2), [[1,1,1,1],[1,1,2],[1,2,1],[2,1,1],[2,2]])
+        self.assertEqual(self.mcr.compa(4,1,2,3), [[1,1,1,1],[1,1,2],[1,2,1],[1,3],[2,1,1],[2,2],[3,1]])
 
     # def test_compam(self):
     #     self.assertEqual(self.mcr.compam(1,1,1), [[1]])
