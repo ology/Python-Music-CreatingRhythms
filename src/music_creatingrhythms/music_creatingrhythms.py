@@ -384,3 +384,8 @@ class Rhythms:
                 y = 1 - y
             sequence.append(y)
         return sequence
+
+    def reverse_at(self, n, parts):
+        head = parts[:n]
+        tail = list(reversed(parts[n:]))
+        return head + tail

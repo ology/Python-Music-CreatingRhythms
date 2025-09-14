@@ -226,13 +226,13 @@ class TestMusicCreatingRhythms(unittest.TestCase):
         self.assertEqual(self.mcr.pfold(15,4,0), [0,0,1,0,0,1,1,0,0,0,1,1,0,1,1])
         self.assertEqual(self.mcr.pfold(15,4,1), [1,0,0,0,1,1,0,0,1,0,0,1,1,1,0])
 
-    # def test_reverse_at(self):
-    #     parts = [1,0,1,0,0]
-    #     self.assertEqual(self.mcr.reverse_at(0, parts), [0,0,1,0,1])
-    #     self.assertEqual(self.mcr.reverse_at(1, parts), [1,0,0,1,0])
-    #     self.assertEqual(self.mcr.reverse_at(2, parts), [1,0,0,0,1])
-    #     self.assertEqual(self.mcr.reverse_at(3, parts), [1,0,1,0,0])
-    #     self.assertEqual(self.mcr.reverse_at(4, parts), [1,0,1,0,0])
+    def test_reverse_at(self):
+        parts = [1,0,1,0,0]
+        self.assertEqual(self.mcr.reverse_at(0, parts), [0,0,1,0,1])
+        self.assertEqual(self.mcr.reverse_at(1, parts), [1,0,0,1,0])
+        self.assertEqual(self.mcr.reverse_at(2, parts), [1,0,0,0,1])
+        self.assertEqual(self.mcr.reverse_at(3, parts), [1,0,1,0,0])
+        self.assertEqual(self.mcr.reverse_at(4, parts), [1,0,1,0,0])
 
     # def test_rotate_n(self):
     #     parts = [1,0,1,0,0]
