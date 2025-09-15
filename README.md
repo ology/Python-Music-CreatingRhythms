@@ -3,9 +3,7 @@ Combinatorial algorithms to generate rhythms
 
 ## DESCRIPTION
 
-This package provides most of the the combinatorial algorithms described in the book, "Creating Rhythms", by Hollos.
-
-Additionally, this module provides utilities that are not part of the book but are handy nonetheless.
+This package provides most of the the combinatorial algorithms described in the book, "Creating Rhythms", by Hollos. Additionally, this module provides utilities that are not part of the book but are handy nonetheless.
 
 The `comp*` methods are used to generate compositions of numbers, which are ways to partition an integer into smaller parts. The arguments passed to these functions determine the specific composition that is generated.
 
@@ -13,7 +11,7 @@ The `neck*` methods generate binary necklaces of a certain length with or withou
 
 The `part*` methods are used to generate all possible partitions of an integer into smaller parts, either with or without specific constraints on the lengths of those parts.
 
-NB: Arguments are sometimes switched between book and software.
+NB: Some arguments are switched between book and this software.
 
 ## MUSICAL EXAMPLE
 ```python
