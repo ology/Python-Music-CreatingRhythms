@@ -40,6 +40,13 @@ d.show(format='midi')
 ### b2int
 This method takes a binary string sequence like `110100` and converts it into a list of intervals like `[1,2,3]`.
 
+### int2b
+Convert intervals of the form `[2,3]` into a set of binary sequences.
+```python
+r.int2b([[1,2,3]]) # [[1,1,0,1,0,0]]
+r.int2b([[1],[2],[3]]) # [[1],[1,0],[1,0,0]]
+```
+
 ### cfcv
 This method calculates the continued fraction convergent given a set of terms. It is used to find the best rational approximations to real numbers by using their continued fraction expansions.
 ```python
@@ -142,13 +149,6 @@ r.de_bruijn(3) # [1,1,1,0,1,0,0,0]
 Generate a Euclidean rhythm given `n` onsets distributed over `m` beats.
 ```python
 r.euclid(2, 4) # [1,0,1,0]
-```
-
-### int2b
-Convert intervals of the form `[2,3]` into a set of binary sequences.
-```python
-r.int2b([[1,2,3]]) # [[1,1,0,1,0,0]]
-r.int2b([[1],[2],[3]]) # [[1],[1,0],[1,0,0]]
 ```
 
 ### invert_at
