@@ -76,7 +76,7 @@ r.comp(4) # [1,1,1,1],[1,1,2],[1,2,1],[1,3],[2,1,1],[2,2],[3,1],[4]
 A "composition" is the set of combinatorial "variations" of the partitions of `n` with the duplicates removed.
 
 ### compa
-Generate compositions of n with allowed intervals `p1, p2, ... pn`.
+Generate compositions of `n` with allowed intervals `p1, p2, ... pn`.
 ```python
 r.compa(4, 1,2) # [[1,1,1,1],[1,1,2],[1,2,1],[2,1,1],[2,2]]
 ```
@@ -84,7 +84,7 @@ r.compa(4, 1,2) # [[1,1,1,1],[1,1,2],[1,2,1],[2,1,1],[2,2]]
 Here, the "intervals" are the terms of the partition.
 
 ### compam
-Generate compositions of n with m parts and allowed intervals `p1, p2, ... pn`.
+Generate compositions of `n` with m parts and allowed intervals `p1, p2, ... pn`.
 ```python
 r.compam(4, 3, 1,2) # [[1,1,2],[1,2,1],[2,1,1]]
 ```
