@@ -1,3 +1,6 @@
+0.1.6 2025-09-14
+    - Add a musical example to the readme.
+
 0.1.5 2025-09-14
     - Add examples to the readme.
 

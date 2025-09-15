@@ -15,11 +15,24 @@ The `part*` methods are used to generate all possible partitions of an integer i
 
 NB: Arguments are sometimes switched between book and software.
 
-## EXAMPLE
+## MUSICAL EXAMPLE
 ```python
 from music_creatingrhythms import Rhythms
+from music_drummer import Drummer
+
 r = Rhythms()
-e = r.euclid(6,16) # [1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0]
+beats = 16
+kick =  ''.join([str(num) for num in r.euclid(2, beats)])
+snare = ''.join([str(num) for num in r.rotate_n(4, r.euclid(2, beats))])
+hihat = ''.join([str(num) for num in r.euclid(11, beats)])
+
+d = Drummer()
+d.set_bpm(100)
+d.set_ts()
+for _ in range(8):
+    d.pattern(patterns={ 'kick': kick, 'snare': snare, 'hihat': hihat })
+d.sync_parts()
+d.show(format='midi')
 ```
 
 ## METHODS
